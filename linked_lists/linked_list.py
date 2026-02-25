@@ -19,3 +19,18 @@ class LinkedList:
             node.next = self.head
             self.head = node
         self.length += 1
+    
+    def append_end(self, value):
+        '''this function add the value to the end of linked list'''
+        #Time complexity = O(n)
+        #Space complexity = O(1)
+        node: Node = Node(value)
+        if self.head is None:
+            self.head = node 
+        else:
+            current: Node = self.head
+            while current.next:
+                current = current.next
+            current.next = node
+        self.length += 1
+
