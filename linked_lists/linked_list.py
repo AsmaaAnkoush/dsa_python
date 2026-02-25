@@ -54,7 +54,7 @@ class LinkedList:
             node.next = current.next
             current.next = node
             self.length += 1
-            
+
     def remove_at(self, index: int) -> int:
         '''this function remove a value at a specific index in the linked list'''
         #Time complexity = O(n)
@@ -78,4 +78,11 @@ class LinkedList:
             current.next = current.next.next
             self.length -= 1
             return removed
+
+    def clear(self):
+        '''this function make linked list empty'''
+        #Time complexity = O(1)
+        #Space complexity = O(1)
+        self.head = None
+        self.length = 0
 
