@@ -151,3 +151,12 @@ class LinkedList:
             current = current.next
         return new_list
 
+    def __str__(self):
+        current: Node = self.head
+        string: str = "head - > "
+        while current:
+            string = string + f"{current.value} -> "
+            current = current.next
+        string = string + "None"
+        return string
+
