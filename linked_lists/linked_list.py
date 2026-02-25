@@ -85,4 +85,18 @@ class LinkedList:
         #Space complexity = O(1)
         self.head = None
         self.length = 0
+    
+    def contains(self,value) -> bool:
+        '''this function check if a value exists in the linked list or not'''
+        #Time complexity = O(n)
+        #Space complexity = O(1)
+        current: Node = self.head
+        if self.length == 0:
+            return False
+        else:
+            while current:
+                if current.value == value:
+                    return True
+                current = current.next
+            return False
 
