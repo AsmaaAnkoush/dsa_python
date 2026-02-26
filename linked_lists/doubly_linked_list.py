@@ -74,3 +74,18 @@ class DoublyLinkedList:
                     return True
                 current = current.next
             return False
+
+    def get_at(self, index):
+        '''this function return the value in the given index'''
+        #Time complexity = O(n)
+        #Space complexity = O(1)
+        if self.length <= index or index < 0:
+            raise IndexError("Index Out Of Range")
+        else:
+            current: DoublyNode = self.head
+            i: int = 0 
+            while i < index :
+                current = current.next
+                i += 1
+            else:
+                return current.value
