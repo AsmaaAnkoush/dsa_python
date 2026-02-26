@@ -31,3 +31,4 @@ def test_front():
     queue.dequeue()
     assert queue.length == 2
     assert queue.front() == 20
+    
