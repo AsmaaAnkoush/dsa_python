@@ -40,3 +40,12 @@ class Stack:
         else:
             peeked_data = self.top.value
             return peeked_data
+    
+    def is_empty(self) -> bool:
+        '''this function check if the stack is empty or not'''
+        #Time Complexity is O(1)
+        #Space complexity is o(1)
+        if self.top == None:
+            return True
+        else:
+            return False
