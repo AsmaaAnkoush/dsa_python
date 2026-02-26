@@ -43,3 +43,10 @@ class Queue:
         if self.head == None:
             raise IndexError ("The Queue is Empty")
         return self.head.value
+    
+    def size(self) -> int:
+        '''this function return the size of queue'''
+        #Time Complexity is O(1)
+        #Space complexity is o(1)
+        return self.length
+
