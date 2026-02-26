@@ -5,7 +5,7 @@ class Stack:
         self.length = 0
     
     def push(self, data):
-        '''this function append data to the stack list'''
+        '''this function append data to the end stack list'''
         #Time Complexity is O(1), o(n) if list resized
         #Space complexity is o(1),, o(n) if list resized
         self.elements.append(data)
