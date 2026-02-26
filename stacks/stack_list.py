@@ -22,3 +22,18 @@ class Stack:
             self.elements.remove(self.elements[-1])
             self.length -= 1
             return poped_element
+
+    def peek(self):
+        '''this function return the top element in stack'''
+        #Time Complexity is O(1)
+        #Space complexity is o(1)
+        return self.elements[-1]
+    
+    def is_empty(self) -> bool:
+        '''this function check if the stack is empty or not'''
+        #Time Complexity is O(1)
+        #Space complexity is o(1)
+        if self.length == 0:
+            return True
+        else:
+            return False
