@@ -25,3 +25,17 @@ class DoublyLinkedList:
             self.head.prev = node
             self.head = node
         self.length += 1
+    
+    def insert_at_tail(self, data):
+        '''this function add the value to the end of double linked list'''
+        #Time complexity = O(1)
+        #Space complexity = O(1)
+        node: DoublyNode = DoublyNode(data)
+        if self.head is None:
+            self.head = node 
+            self.tail = node
+        else:
+            self.tail.next = node
+            node.prev = self.tail
+            self.tail = node
+        self.length += 1
