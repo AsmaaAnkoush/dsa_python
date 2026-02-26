@@ -30,3 +30,13 @@ class Stack:
             self.top = self.top.next
             self.length -= 1
             return poped_data
+
+    def peek(self):
+        '''this function return the top element in stack'''
+        #Time Complexity is O(1)
+        #Space complexity is o(1)
+        if self.top == None:
+            raise IndexError ("The Stack is Empty")
+        else:
+            peeked_data = self.top.value
+            return peeked_data
