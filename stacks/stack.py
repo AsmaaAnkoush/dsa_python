@@ -49,3 +49,9 @@ class Stack:
             return True
         else:
             return False
+
+    def size(self) -> int:
+        '''this function return the size of stack'''
+        #Time Complexity is O(1)
+        #Space complexity is o(1)
+        return self.length
