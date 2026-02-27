@@ -90,8 +90,11 @@ class CircularLinkedList:
             for _ in range (index):
                 current = current.next
             return current.data
+        
+    def size(self) -> int:
+        return self.length
 
-    def __str__(self):
+    def print_list(self):
         '''this function for human-readable representation'''
         if self.head == None:
             return "Empty List"
@@ -102,4 +105,4 @@ class CircularLinkedList:
                 current = current.next
                 string = string + f"{current.data} -> "
         string = string + "head" 
-        return string
+        print (string)
