@@ -18,3 +18,13 @@ def test_insert():
     assert cll.length == 2
     cll.insert(15)
     assert cll.length == 3
+
+def test_containes():
+    cll = CircularLinkedList()
+    cll.insert(10)
+    cll.insert(15)
+    cll.insert(20)
+    assert cll.containes(11) is False
+    assert cll.containes(10) is True
+    assert cll.containes(15) is True
+    assert cll.containes(20) is True
