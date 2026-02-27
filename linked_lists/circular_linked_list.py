@@ -25,6 +25,29 @@ class CircularLinkedList:
             current.next = node
             node.next = self.head
             self.length += 1
+    
+    def delete(self, data) -> bool:
+        pass
+
+    def containes(self, data) -> bool:
+        '''this function check if the data exist in the circular linked list'''
+        #Time Complexity = O(n)
+        #Space Complexity = O(1)
+        if self.head == None:
+            return False
+        current: CircularNode = self.head
+        if current.data == data:
+            current = current.next
+            return True
+        else:
+            current = current.next
+        while current != self.head:
+            if current.data == data:
+                return True
+            else:
+                pass
+            current = current.next
+        return False
 
     def __str__(self):
         '''this function for human-readable representation'''
