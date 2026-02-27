@@ -39,3 +39,12 @@ def test_delete():
     assert cll.delete(15) is True
     assert cll.length is 1
 
+def test_get_at():
+    cll = CircularLinkedList()
+    cll.insert(10)
+    cll.insert(15)
+    cll.insert(20)
+    assert cll.get_at(0) is 10
+    assert cll.get_at(1) is 15
+    assert cll.get_at(2) is 20
+    assert cll.length is 3
