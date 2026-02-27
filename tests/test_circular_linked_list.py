@@ -28,3 +28,14 @@ def test_containes():
     assert cll.containes(10) is True
     assert cll.containes(15) is True
     assert cll.containes(20) is True
+
+def test_delete():
+    cll = CircularLinkedList()
+    cll.insert(10)
+    cll.insert(15)
+    cll.insert(20)
+    assert cll.delete(11) is False
+    assert cll.delete(10) is True
+    assert cll.delete(15) is True
+    assert cll.length is 1
+
