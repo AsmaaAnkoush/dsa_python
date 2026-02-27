@@ -1,4 +1,4 @@
-# 🧠 Python Linked Lists  
+# 🧠 Python Queue  
 
 # first from-scratch implementation of **Queue** in Python.
 - Queue build from scratch

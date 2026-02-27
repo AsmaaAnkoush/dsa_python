@@ -1,4 +1,4 @@
-# 🧠 Python Linked Lists  
+# 🧠 Python Stack 
 
 # first from-scratch implementation of **Stack** in Python in three way.
 - Stack build from scratch
